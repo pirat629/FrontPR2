@@ -1,0 +1,375 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-small {
+    gap: 10px;
+}
+
+.gap-medium {
+    gap: 20px;
+}
+
+.gap-large {
+    gap: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.bg-dark {
+    background-color: #415167;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-horizontal {
+    display: flex;
+    gap: 20px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    height: 30px;
+}
+
+.banner-container .title-large {
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlight {
+    background-color: #C7A17A;
+    padding: 0 10px;
+    color: white;
+}
+
+.text-dark {
+    color: #415167;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-light {
+    background-color: #f8f9fa;
+}
+
+.section-dark {
+    background-color: #2c3e50;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-icon {
+    max-width: 200px;
+}
+
+.icon-large {
+    height: 80px;
+}
+
+.icon-medium {
+    height: 60px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.sub-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.card-product {
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    color: #e67e22;
+}
+
+.price-strike {
+    color: #999;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #e67e22;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #bdc3c7;
+    color: #333;
+}
+
+.gift-main {
+    flex: 2;
+}
+
+.gift-options {
+    flex: 1;
+}
+
+.image-large {
+    max-width: 400px;
+}
+
+.pagination .list {
+    justify-content: center;
+}
+
+.pagination a {
+    padding: 10px;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.hero-nav a {
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.hero-nav a:hover {
+    opacity: 0.7;
+    transform: translateX(8px);
+}
+
+.hero-nav a:focus {
+    opacity: 0.8;
+    outline: none;
+    transform: translateX(8px);
+}
+
+.hero-nav a:active {
+    opacity: 0.5;
+    transform: translateX(10px);
+}
+
+.btn {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+    outline: 3px solid #d4af37;
+    outline-offset: 2px;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #c97e1f;
+}
+
+.btn-primary:active {
+    background-color: #b36d1a;
+}
+
+.btn-secondary:hover {
+    background-color: #a7b0b6;
+}
+
+.btn-secondary:active {
+    background-color: #939ea5;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-gold:hover {
+    background-color: #e6c54a;
+}
+
+.btn-gold:active {
+    background-color: #c29d2e;
+}
+
+.card-product {
+    transition: all 0.3s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-product:focus-within {
+    outline: 3px solid #d4af37;
+    outline-offset: 4px;
+}
+
+.pagination a {
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #d4af37;
+    transform: scale(1.1);
+}
+
+.pagination a:focus {
+    outline: 3px solid white;
+}
+
+.pagination a:active {
+    transform: scale(0.95);
+}
+
+.cart-icon-container {
+    transition: transform 0.2s ease;
+}
+
+.cart-icon-container:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon-container:active {
+    transform: scale(0.95);
+}
+
+a, button, .card, .btn, .pagination a, .cart-icon-container {
+    transition: all 0.3s ease;
+}

@@ -3,154 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Title</title>
 </head>
 <body>
 <header>
-    <img src="assets/icons/LOGO.png" alt="Логотип">
-    <h1>Твой персональный кофе</h1>
-    <img src="assets/img/Banner.png" alt="Главный баннер">
-    <img src="assets/icons/Shop.png" alt="Корзина">
-    <nav>
-        <ul>
-            <li><a href="#">Якорная ссылка 1</a></li>
-            <li><a href="#">Якорная ссылка 2</a></li>
-            <li><a href="#">Якорная ссылка 3</a></li>
-            <li><a href="#">Якорная ссылка 4</a></li>
-            <li><a href="#">Якорная ссылка 5</a></li>
-            <li><a href="#">Якорная ссылка 6</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section>
-        <h2>Первая секция</h2>
-        <div>
-            <article>
-                <img src="assets/icons/Coffee1.png" alt="Фотография кофе 1">
-                <h3>Кофе 1</h3>
-                <p>Как принято считать, диаграммы связей, превозмогая сложившуюся непростую экономическую ситуацию,
-                    превращены в&nbsp;посмешище, хотя само их&nbsp;существование приносит несомненную пользу обществу.</p>
-            </article>
-            <article>
-                <img src="assets/icons/Coffee2.png" alt="Фотография кофе 2">
-                <h3>Кофе 2</h3>
-                <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                    факта: начало повседневной работы по&nbsp;формированию позиции способствует повышению качества
-                    существующих финансовых и&nbsp;административных условий.</p>
-            </article>
-            <article>
-                <img src="assets/icons/Coffee3.png" alt="Фотография кофе 3">
-                <h3>Кофе 3</h3>
-                <p>Учитывая ключевые сценарии поведения, базовый вектор развития, а&nbsp;также свежий взгляд на&nbsp;
-                    привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для стандартных подходов.</p>
-            </article>
-            <article>
-                <img src="assets/icons/Coffee4.png" alt="Фотография кофе 4">
-                <h3>Кофе 4</h3>
-                <p>Кстати, активно развивающиеся страны третьего мира будут призваны к&nbsp;ответу.</p>
-            </article>
+    <div class="container flex flex-align-center flex-justify-between">
+        <div class="flex flex-column">
+            <img class="logo" src="assets/icons/LOGO.png" alt="Логотип">
+            <h1 class="title title-large text-overlay text-white text-bold text-dark">Твой <span class="highlight">персональный</span> кофе</h1>
         </div>
-    </section>
-    <section>
-        <h2>Вторая секция</h2>
-        <article>
-            <img src="assets/img/Coffee_Yellow.png" alt="Фото желтого кофе">
-            <p>99.00</p>
-            <h3>Утренний кофе</h3>
-            <p>Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что синтетическое тестирование</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-        <article>
-            <img src="assets/img/Coffee_Blue.png" alt="Фото голубого кофе">
-            <p>85.00</p>
-            <h3>Вечерний кофе</h3>
-            <p>Есть над чем задуматься: многие известные личности смешаны</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-        <article>
-            <img src="assets/img/Coffee_Orange.png" alt="Фото оранжевого кофе">
-            <p>139.00</p>
-            <h3>Оригинальный кофе</h3>
-            <p>Господа, начало повседневной работы по&nbsp;формированию позиции</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-        <article>
-            <img src="assets/img/Coffee_Brown.png" alt="Фото коричневого кофе">
-            <p>75.00</p>
-            <h3>Другой кофе</h3>
-            <p>Приятно, граждане, наблюдать, как представители современных</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-    </section>
-    <section>
-        <h2>Третья секция</h2>
-        <img src="assets/img/Coffee_Gift.png" alt="Подарочный кофе">
-        <p>285.00</p>
-        <h3>Подари другу кофе</h3>
-        <p>Равным образом, высокое качество позиционных исследований позволяет оценить значение укрепления моральных
-            ценностей. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую
-            зависит от&nbsp;поставленных обществом задач.</p>
-        <div>
-            <img src="assets/icons/Coffee5.png" alt="Кофейные зерна">
-            <h4>Зерновой кофе</h4>
-        </div>
-        <div>
-            <img src="assets/icons/Coffee6.png" alt="Горные зерна">
-            <h4>Горный кофе</h4>
-        </div>
-        <button>Купить сейчас</button>
-        <button>Положить в корзину</button>
-        <nav>
-            <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
+        <img class="banner" src="assets/img/Banner.png" alt="Главный баннер">
+        <nav class="nav flex flex-column flex-align-center bg-dark full-width full-height">
+            <img class="shop icon" src="assets/icons/Shop.png" alt="Корзина">
+            <ul class="list list-row">
+                <li class="list-item"><a href="#section-1">Секция 1</a></li>
+                <li class="list-item"><a href="#section-2">Секция 2</a></li>
+                <li class="list-item"><a href="#section-3">Секция 3</a></li>
+                <li class="list-item"><a href="#section-4">Секция 4</a></li>
+                <li class="list-item"><a href="#footer">footer</a></li>
             </ul>
         </nav>
+    </div>
+</header>
+<main>
+    <section class="section section-light" id="section-1">
+        <div class="container">
+            <h2 class="section-title text-center text-bold">Первая секция</h2>
+            <div class="grid grid-4-col gap-medium">
+                <article class="card card-icon text-center">
+                    <img class="card-image icon-large" src="assets/icons/Coffee1.png" alt="Фотография кофе 1">
+                    <h3 class="card-title text-bold">Кофе 1</h3>
+                    <p class="card-text">Как принято считать, диаграммы связей, превозмогая сложившуюся непростую экономическую ситуацию,
+                        превращены в&nbsp;посмешище, хотя само их&nbsp;существование приносит несомненную пользу обществу.</p>
+                </article>
+                <article class="card card-icon text-center">
+                    <img class="card-image icon-large" src="assets/icons/Coffee2.png" alt="Фотография кофе 2">
+                    <h3 class="card-title text-bold">Кофе 2</h3>
+                    <p class="card-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                        факта: начало повседневной работы по&nbsp;формированию позиции способствует повышению качества
+                        существующих финансовых и&nbsp;административных условий.</p>
+                </article>
+                <article class="card card-icon text-center">
+                    <img class="card-image icon-large" src="assets/icons/Coffee3.png" alt="Фотография кофе 3">
+                    <h3 class="card-title text-bold">Кофе 3</h3>
+                    <p class="card-text">Учитывая ключевые сценарии поведения, базовый вектор развития, а&nbsp;также свежий взгляд на&nbsp;
+                        привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для стандартных подходов.</p>
+                </article>
+                <article class="card card-icon text-center">
+                    <img class="card-image icon-large" src="assets/icons/Coffee4.png" alt="Фотография кофе 4">
+                    <h3 class="card-title text-bold">Кофе 4</h3>
+                    <p class="card-text">Кстати, активно развивающиеся страны третьего мира будут призваны к&nbsp;ответу.</p>
+                </article>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Четвертая секция</h2>
-        <article>
-            <img src="assets/img/Coffee_Brown_Combo.png" alt="Комбо коричневый кофе">
-            <p>147.00</p>
-            <p><s>155.00</s></p>
-            <h3>Кофе коричневый комбо</h3>
-            <p>В&nbsp;рамках спецификации современных стандартов, представители современных социальных резервов
-                формируют глобальную экономическую сеть и&nbsp;при этом&nbsp;&mdash; описаны максимально подробно.</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-        <article>
-            <img src="assets/img/Coffee_Blue_Combo.png" alt="Комбо голубой кофе">
-            <p>156.00</p>
-            <p><s>165.00</s></p>
-            <h3>Кофе голубой комбо</h3>
-            <p>Безусловно, выбранный нами инновационный путь обеспечивает широкому кругу (специалистов) участие в&nbsp;
-                формировании соответствующих условий активизации.</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
-        <article>
-            <img src="assets/img/Coffee_Red_Combo.png" alt="Комбо красный кофе">
-            <p>275.00</p>
-            <p><s>260.00</s></p>
-            <h3>Кофе красный комбо</h3>
-            <p>Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также независимые государства объединены в&nbsp;целые
-                кластеры себе подобных.</p>
-            <button>Купить сейчас</button>
-            <button>Положить в корзину</button>
-        </article>
+    <section class="section section-dark" id="section-2">
+        <div class="container">
+            <h2 class="section-title text-center text-white text-bold">Вторая секция</h2>
+            <div class="grid grid-4-col gap-medium">
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Yellow.png" alt="Фото желтого кофе">
+                    <p class="price text-bold">99.00</p>
+                    <h3 class="card-title text-bold">Утренний кофе</h3>
+                    <p class="card-text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что синтетическое тестирование</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Blue.png" alt="Фото голубого кофе">
+                    <p class="price text-bold">85.00</p>
+                    <h3 class="card-title text-bold">Вечерний кофе</h3>
+                    <p class="card-text">Есть над чем задуматься: многие известные личности смешаны</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Orange.png" alt="Фото оранжевого кофе">
+                    <p class="price text-bold">139.00</p>
+                    <h3 class="card-title text-bold">Оригинальный кофе</h3>
+                    <p class="card-text">Господа, начало повседневной работы по&nbsp;формированию позиции</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Brown.png" alt="Фото коричневого кофе">
+                    <p class="price text-bold">75.00</p>
+                    <h3 class="card-title text-bold">Другой кофе</h3>
+                    <p class="card-text">Приятно, граждане, наблюдать, как представители современных</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section section-light" id="section-3">
+        <div class="container">
+            <h2 class="section-title text-center text-bold">Третья секция</h2>
+            <div class="flex flex-align-start gap-large">
+                <div class="gift-main">
+                    <img class="image-large rounded" src="assets/img/Coffee_Gift.png" alt="Подарочный кофе">
+                    <p class="price text-bold">285.00</p>
+                    <h3 class="card-title text-bold">Подари другу кофе</h3>
+                    <p class="card-text">Равным образом, высокое качество позиционных исследований позволяет оценить значение укрепления моральных
+                        ценностей. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий напрямую
+                        зависит от&nbsp;поставленных обществом задач.</p>
+                    <div class="flex gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </div>
+                <div class="gift-options flex flex-column gap-medium">
+                    <div class="card card-icon text-center bg-white shadow rounded">
+                        <img class="icon-medium" src="assets/icons/Coffee5.png" alt="Кофейные зерна">
+                        <h4 class="sub-title text-bold">Зерновой кофе</h4>
+                    </div>
+                    <div class="card card-icon text-center bg-white shadow rounded">
+                        <img class="icon-medium" src="assets/icons/Coffee6.png" alt="Горные зерна">
+                        <h4 class="sub-title text-bold">Горный кофе</h4>
+                    </div>
+                </div>
+            </div>
+            <nav class="pagination text-center">
+                <ul class="list list-horizontal">
+                    <li class="list-item"><a href="">1</a></li>
+                    <li class="list-item"><a href="">2</a></li>
+                    <li class="list-item"><a href="">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="section section-dark" id="section-4">
+        <div class="container">
+            <h2 class="section-title text-center text-white text-bold">Четвертая секция</h2>
+            <div class="grid grid-3-col gap-medium">
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Brown_Combo.png" alt="Комбо коричневый кофе">
+                    <div class="flex flex-align-center gap-small">
+                        <p class="price text-bold">147.00</p>
+                        <p class="price-strike"><s>155.00</s></p>
+                    </div>
+                    <h3 class="card-title text-bold">Кофе коричневый комбо</h3>
+                    <p class="card-text">В&nbsp;рамках спецификации современных стандартов, представители современных социальных резервов
+                        формируют глобальную экономическую сеть и&nbsp;при этом&nbsp;&mdash; описаны максимально подробно.</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Blue_Combo.png" alt="Комбо голубой кофе">
+                    <div class="flex flex-align-center gap-small">
+                        <p class="price text-bold">156.00</p>
+                        <p class="price-strike"><s>165.00</s></p>
+                    </div>
+                    <h3 class="card-title text-bold">Кофе голубой комбо</h3>
+                    <p class="card-text">Безусловно, выбранный нами инновационный путь обеспечивает широкому кругу (специалистов) участие в&nbsp;
+                        формировании соответствующих условий активизации.</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+                <article class="card card-product bg-white shadow rounded">
+                    <img class="card-image full-width" src="assets/img/Coffee_Red_Combo.png" alt="Комбо красный кофе">
+                    <div class="flex flex-align-center gap-small">
+                        <p class="price text-bold">275.00</p>
+                        <p class="price-strike"><s>260.00</s></p>
+                    </div>
+                    <h3 class="card-title text-bold">Кофе красный комбо</h3>
+                    <p class="card-text">Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также независимые государства объединены в&nbsp;целые
+                        кластеры себе подобных.</p>
+                    <div class="flex flex-justify-center gap-small">
+                        <button class="btn btn-primary">Купить сейчас</button>
+                        <button class="btn btn-secondary">Положить в корзину</button>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 </main>
-<footer>
-    <p>С&nbsp;учётом сложившейся международной обстановки, консультация с&nbsp;широким активом играет важную роль
-        в&nbsp;формировании анализа существующих паттернов поведения.</p>
+<footer class="footer bg-light" id="footer">
+    <div class="container">
+        <p class="text-center">С&nbsp;учётом сложившейся международной обстановки, консультация с&nbsp;широким активом играет важную роль
+            в&nbsp;формировании анализа существующих паттернов поведения.</p>
+    </div>
 </footer>
-
 </body>
 </html>
